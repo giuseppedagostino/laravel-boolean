@@ -12,8 +12,9 @@ class HomeController extends Controller
         // accedo in maniera statica al suo metodo statico
         // public static function all
         $cars = Car::all();
-        dd($cars);
+        // dd($cars);
 
-        return view('home');
+        // passo la collection sotto forma di array
+        return view('home', compact('cars'));
     }
 }

@@ -10,6 +10,14 @@
 
   <body>
     <h1>laravel-boolean</h1>
+
+    {{-- con il for each stampo tutti gli elementi della mia collection --}}
+    @foreach ($cars as $item)
+        <h2><?php echo $item->brand . " - " . $item->name ?></h2>
+        <h3><?php echo $item->license_plate . " - " . $item->color . " - " . $item->type . " - " . $item->year ?></h3>
+        <hr>
+    @endforeach
+
   </body>
 
 </html>
