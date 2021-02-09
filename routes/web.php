@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 // ROTTA HOME CON PAGINA HOME.BLADE.PHP
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'HomeController@index' )->name('home');
