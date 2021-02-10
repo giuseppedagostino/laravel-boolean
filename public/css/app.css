@@ -15,6 +15,21 @@ h1 {
   margin-bottom: 50px;
 }
 
-h3, hr {
-  margin-bottom: 25px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car {
+  margin: 10px;
+  padding: 20px;
+  width: calc(100% / 3 - 20px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.car:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
